@@ -1,0 +1,35 @@
+.nav {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav div {
+  display: flex;
+  gap: 2rem;
+}
+
+.link {
+  font-weight: 500;
+  color: #31393c;
+  padding: 0.25rem 0.75rem;
+}
+
+.link:hover {
+  color: #477e5b;
+}
+
+.active {
+  font-weight: 600;
+  color: #477e5b;
+  border-bottom: 2px solid #477e5b;
+}
+
+@media (max-width: 1400px) {
+  .nav {
+    max-width: 90%;
+  }
+}

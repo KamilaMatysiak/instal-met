@@ -1,0 +1,101 @@
+footer {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+footer > div {
+  padding: 2vh 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.facebook {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.facebook:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.card h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card p {
+  color: #777777;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hours > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hours .hour {
+  font-weight: 600;
+}
+
+.contact,
+.hours,
+.visitCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact a {
+  color: #f5841f;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  margin: 16px auto;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .card {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hours > div {
+    width: 100%;
+  }
+
+  .contact,
+  .hours,
+  .visitCard,
+  footer > div {
+    flex-direction: column;
+  }
+
+  .contact,
+  .hours,
+  .visitCard {
+    padding-bottom: 2rem;
+  }
+}
