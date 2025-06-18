@@ -1,0 +1,28 @@
+{
+  "promocje": [
+    {
+      "tytul": "Majowa oferta specjalna",
+      "data_od": "2025-05-01",
+      "data_do": "2025-05-31",
+      "pokazDate": true,
+      "tresc": "Tylko do końca maja rowery do 50% niższa cena!",
+      "zdj": "./promocje/maj2025_rowery.jpg"
+    },
+    {
+      "tytul": "Oferta specjalna",
+      "data_od": "2025-05-01",
+      "data_do": "2025-05-31",
+      "pokazDate": true,
+      "tresc": "Tylko teraz piekarniki 20% taniej",
+      "zdj": "./promocje/maj2025_piekarniki.jpg"
+    },
+    {
+      "tytul": "Nowość",
+      "data_od": "2025-05-08",
+      "data_do": "2025-05-10",
+      "pokazDate": false,
+      "tresc": "Okap przyścienny Kernau KCH 5590.1 B Automatic \n\n - Możliwość pracy jako pochłaniacz lub wyciąg\n - 3 Stopnie pracy wentylatora\n - Filtry aluminiowe \n\n Tylko za 1360 zł!",
+      "zdj": "./promocje/maj2025_okap.jpg"
+    }
+  ]
+}
