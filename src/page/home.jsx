@@ -7,6 +7,7 @@ export const Home = () => {
   useEffect(() => {
     fetch('public/promocje/promocje.json')
       .then((r) => {
+        console.log(r)
         return r.json()
       })
       .then((data) => setPromocje(data.promocje))

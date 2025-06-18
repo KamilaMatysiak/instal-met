@@ -25,44 +25,48 @@ export const Banner = ({ promocje }) => {
   }, [obj])
 
   return (
-    <div className={styles.banner}>
-      <div className={styles.bannerBox}>
-        <div className={styles.bannerText}>
-          <h1>{obj.tytul}</h1>
-          <p>{obj.tresc}</p>
-          {obj.pokazDate && (
-            <p className={styles.smallText}>
-              Oferta ważna od {obj.data_od} do {obj.data_do}
-            </p>
-          )}
-          <div className={styles.dots}>
-            {promocje.length > 1 &&
-              promocje.map(
-                (p, i) =>
-                  p && (
-                    <div
-                      key={i}
-                      onClick={() => {
-                        setObj(promocje[i])
-                        setCurrentImgIndex(i)
-                      }}
-                      className={
-                        i == currentImgIndex
-                          ? `${styles.galleryDot} ${styles.actual}`
-                          : `${styles.galleryDot}`
-                      }
-                    />
-                  )
+    <>
+      {obj && (
+        <div className={styles.banner}>
+          <div className={styles.bannerBox}>
+            <div className={styles.bannerText}>
+              <h1>{obj?.tytul}</h1>
+              <p>{obj?.tresc}</p>
+              {obj?.pokazDate && (
+                <p className={styles.smallText}>
+                  Oferta ważna od {obj?.data_od} do {obj?.data_do}
+                </p>
               )}
+              <div className={styles.dots}>
+                {promocje.length > 1 &&
+                  promocje.map(
+                    (p, i) =>
+                      p && (
+                        <div
+                          key={i}
+                          onClick={() => {
+                            setObj(promocje[i])
+                            setCurrentImgIndex(i)
+                          }}
+                          className={
+                            i == currentImgIndex
+                              ? `${styles.galleryDot} ${styles.actual}`
+                              : `${styles.galleryDot}`
+                          }
+                        />
+                      )
+                  )}
+              </div>
+            </div>
+            <div className={styles.img}>
+              <img src={obj?.zdj} />
+              <div className={`${styles.orange} ${styles.orangeTop}`}></div>
+              <div className={`${styles.orange} ${styles.orangeBottom}`}></div>
+            </div>
           </div>
         </div>
-        <div className={styles.img}>
-          <img src={obj.zdj} />
-          <div className={`${styles.orange} ${styles.orangeTop}`}></div>
-          <div className={`${styles.orange} ${styles.orangeBottom}`}></div>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   )
 }
 
