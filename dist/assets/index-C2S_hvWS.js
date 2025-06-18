@@ -17107,8 +17107,8 @@ ogrodnicze`,
       Component: fv,
       children: [
         { index: !0, Component: Lv },
-        { path: '/o-nas', Component: Bv },
-        { path: '/kontakt', Component: qv },
+        { path: '/instal-met/o-nas', Component: Bv },
+        { path: '/instal-met/kontakt', Component: qv },
       ],
     },
   ])

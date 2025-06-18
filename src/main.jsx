@@ -2,19 +2,23 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from 'react-router'
 import { Home } from './page/home.jsx'
 import { About } from './page/About.jsx'
 import { Contact } from './page/Contact.jsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/',
+    path: '/instal-met/',
     Component: App,
     children: [
       { index: true, Component: Home },
-      { path: '/o-nas', Component: About },
-      { path: '/kontakt', Component: Contact },
+      { path: '/instal-met/o-nas', Component: About },
+      { path: '/instal-met/kontakt', Component: Contact },
     ],
   },
 ])

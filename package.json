@@ -1,5 +1,6 @@
 {
   "name": "instal-met",
+  "homepage": "https://github.com/KamilaMatysiak/instal-met",
   "private": true,
   "version": "0.0.0",
   "type": "module",
