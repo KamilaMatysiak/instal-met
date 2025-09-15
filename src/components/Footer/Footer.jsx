@@ -7,7 +7,7 @@ export const Footer = () => {
       <div>
         <div className={styles.visitCard}>
           <div className={styles.card}>
-            <img src="./instalmetLogo.svg" />
+            <img src="./instalmetLogo.svg" alt="Logo Instal-met" />
             <div>
               <h1>INSTAL-MET</h1>
               <p>
@@ -21,7 +21,7 @@ export const Footer = () => {
             href="https://www.facebook.com/profile.php?id=100064063835879&locale=pl_PL"
             target="_blank"
           >
-            <img src={facebook} />
+            <img src={facebook} alt="Link do Facebooka" />
           </a>
         </div>
         <div className={styles.hours}>

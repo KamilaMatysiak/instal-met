@@ -1,6 +1,6 @@
 .offer {
   max-width: 1400px;
-  margin: auto;
+  margin: 6rem auto 8rem auto;
   gap: 42px;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
 @media (max-width: 1600px) {
   .offer {
     max-width: fit-content;
-    margin: auto;
+    margin: 4rem auto;
   }
 
   .offer > div {
@@ -67,5 +67,25 @@
     gap: 4rem;
     width: 100%;
     margin: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offer > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .tile {
+    width: 100%;
+    height: 100px;
+    gap: 16px;
+    flex-direction: row;
+  }
+
+  .tile img {
+    width: 32px;
   }
 }

@@ -1,5 +1,5 @@
 .button {
-  background: #62a87c;
+  background: #457d59;
   color: #f9f9fb;
   border-radius: 16px;
   font-size: 16px;
@@ -11,5 +11,6 @@
 }
 
 .button:hover {
-  background: #58946e;
+  background: #335b43;
+  color: #fff;
 }

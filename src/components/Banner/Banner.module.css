@@ -3,14 +3,44 @@
   background: #31393c;
 }
 
+.bannerFlex {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bannerFlex button {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0 1rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.bannerFlex button:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.bannerFlex .nextbtn {
+  right: 0;
+}
+
+.bannerFlex .prevbtn {
+  left: 0;
+}
+
 .bannerBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   width: 1400px;
-  height: 350px;
-  margin: 10rem auto;
+  min-height: 350px;
+  margin: 0 auto;
 }
 
 .bannerText {
@@ -29,12 +59,14 @@
 .bannerText h1 {
   font-size: 20px;
   font-weight: bold;
+  max-width: 600px;
 }
 
 .bannerText p {
   font-size: 24px;
   margin: 1rem 0;
-  white-space: pre;
+  white-space: pre-wrap;
+  max-width: 600px;
 }
 
 .bannerText .smallText {
@@ -43,7 +75,6 @@
 
 .bannerBox .img {
   position: relative;
-  background: blue;
   width: 500px;
   height: 400px;
 }
@@ -57,6 +88,34 @@
   top: 0;
   left: 0;
   position: absolute;
+  background: #31393c;
+}
+
+.bannerMessage {
+  max-width: 100vw;
+  background-color: #358151;
+}
+
+.bannerMessage div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1416px;
+  height: 100%;
+  margin: 2rem auto 0 auto;
+  color: #fff;
+  padding: 0.25rem 1rem;
+}
+
+.bannerMessage i {
+  height: 24px;
+}
+
+.bannerMessage h2 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-wrap-mode: wrap;
 }
 
 .orange {
@@ -68,11 +127,13 @@
 }
 
 .orangeTop {
+  clip-path: polygon(0 0, 100% 0, 100% 9%, 4% 8%, 4% 100%, 0 100%);
   top: -4px;
   left: -4px;
 }
 
 .orangeBottom {
+  clip-path: polygon(96% 0, 100% 0, 100% 100%, 0 100%, 0 92%, 96% 93%);
   bottom: -12px;
   right: -12px;
 }
@@ -124,11 +185,9 @@
 
 @media (max-width: 1000px) {
   .bannerBox {
-    margin-top: 4rem;
     width: 90%;
-    padding: 4rem 0;
+    padding: 1rem 0;
     height: fit-content;
-    max-height: 1000px;
     flex-direction: column;
   }
 
@@ -142,6 +201,31 @@
 
   .bannerText p {
     max-width: 100%;
-    white-space: wrap;
+    white-space: pre-wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .bannerBox .img {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+  }
+  .bannerBox img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bannerFlex button {
+    position: absolute;
+    height: 72px;
+    width: 32px;
+    top: auto;
+    bottom: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0;
+    color: #fff;
+    z-index: 9999;
   }
 }

@@ -1,28 +1,36 @@
 {
   "promocje": [
     {
-      "tytul": "Czerwcowa oferta specjalna",
-      "data_od": "2025-06-01",
-      "data_do": "2025-06-30",
-      "pokazDate": true,
-      "tresc": "Tylko do końca czerwca rowery do 50% niższa cena!",
-      "zdj": "./promocje/maj2025_rowery.jpg"
-    },
-    {
       "tytul": "Oferta specjalna",
-      "data_od": "2025-06-01",
-      "data_do": "2025-07-30",
-      "pokazDate": true,
-      "tresc": "Tylko teraz piekarniki 20% taniej",
-      "zdj": "./promocje/maj2025_piekarniki.jpg"
+      "data_od": "2025-07-01",
+      "data_do": "2025-07-31",
+      "pokazDate": false,
+      "tresc": "Przy zakupie promocyjnego roweru oświetlenie za 1zł!",
+      "zdj": "./promocje/maj2025_okap.jpg"
     },
     {
-      "tytul": "Nowość",
+      "tytul": "PRALKA KERNAU KFWM I 6501 6kg Eco-Logic",
       "data_od": "2025-06-28",
-      "data_do": "2025-06-30",
+      "data_do": "2026-07-31",
       "pokazDate": false,
-      "tresc": "Okap przyścienny Kernau KCH 5590.1 B Automatic \n\n - Możliwość pracy jako pochłaniacz lub wyciąg\n - 3 Stopnie pracy wentylatora\n - Filtry aluminiowe \n\n Tylko za 1360 zł!",
+      "tresc": "Z 5-letnią gwarancją w cenie \n\nTylko za 1149,00 zł!",
       "zdj": "./promocje/maj2025_okap.jpg"
+    },
+    {
+      "tytul": "CHŁODZIARKA CANDY CCE 3T618 FW",
+      "data_od": "2025-07-01",
+      "data_do": "2026-07-31",
+      "pokazDate": false,
+      "tresc": " - Kontroluj świeżość dzięki aplikacji Hon\n - 3 szuflady w zamrażarce\n - Specjalna szuflada na owoce i warzywa \n\nTylko za 1699,00 zł!",
+      "zdj": "./promocje/maj2025_okap.jpg"
+    },
+    {
+      "tytul": "GRZEJNIKI C22 – BOCZNE PODŁĄCZENIE",
+      "data_od": "2025-07-01",
+      "data_do": "2026-07-31",
+      "pokazDate": false,
+      "tresc": "C22 60*800 1200W - 379,00 zł\nC22 60*1000 1414W - 429,00 zł\nC22 60*1400 1980W - 580,00 zł",
+      "zdj": "./promocje/maj2025_rowery.jpg"
     }
   ]
 }

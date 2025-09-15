@@ -5,7 +5,10 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <NavLink to="/">
-        <img src="./instalmetLogo.svg" />
+        <img
+          src="./instalmetLogo.svg"
+          alt="Instal-Met. Sprzedaż artykułów przemysłowych i mechanicznych"
+        />
       </NavLink>
       <div>
         <NavLink

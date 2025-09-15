@@ -1,27 +1,21 @@
-import agd from '../../assets/agd.svg'
-import garden from '../../assets/garden.svg'
-import heater from '../../assets/heater.svg'
-import tools from '../../assets/tools.svg'
-import shoppingCart from '../../assets/shoppingCart.svg'
-import rtv from '../../assets/rtv.svg'
+import { CATEGORIES } from '../../constants/categories'
 import styles from './Offer.module.css'
 
 export const Offer = () => {
-  const tiles = [
-    { text: 'Artykuły \nbudowlane', img: shoppingCart },
-    { text: 'Narzędzia', img: tools },
-    { text: 'Artykuły \nogrodnicze', img: garden },
-    { text: 'Sprzęty RTV', img: rtv },
-    { text: 'Sprzęty AGD', img: agd },
-    { text: 'Kotły', img: heater },
-  ]
   return (
     <div className={styles.offer}>
       <h1>Nasza oferta</h1>
       <div>
-        {tiles.map(
+        {CATEGORIES.map(
           (tile, i) =>
-            tile && <OfferTile key={i} text={tile.text} img={tile.img} />
+            tile && (
+              <OfferTile
+                key={i}
+                text={tile.text}
+                img={tile.img}
+                path={tile.path}
+              />
+            )
         )}
       </div>
       <p>I wiele więcej...</p>
@@ -29,10 +23,10 @@ export const Offer = () => {
   )
 }
 
-export const OfferTile = ({ text, img }) => {
+export const OfferTile = ({ text, img, path }) => {
   return (
-    <div className={styles.tile}>
-      <img src={img} /> {text}
-    </div>
+    <a href={`#/oferta/${path}`} className={styles.tile}>
+      <img src={img} alt={text} /> {text}
+    </a>
   )
 }

@@ -57,7 +57,12 @@ export const About = () => {
       </div>
       <div>
         <div className="map">
-          <img width={508} height={406} src="./instal-met.jpg" />
+          <img
+            width={508}
+            height={406}
+            src="./instal-met.jpg"
+            alt="Wejście do sklepu Instal-Met w Nowym Mieście Nad Wartą ul. Szkolna 3A."
+          />
           <div className="orange orangeTop"></div>
           <div className="orange orangeBottom"></div>
         </div>

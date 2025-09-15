@@ -1,0 +1,36 @@
+{
+  "produkty": [
+    {
+      "kategoria": "artykuly-budowlane",
+      "zdj": "./promocje/maj2025_okap.jpg",
+      "producent": "abc",
+      "nazwa": "def",
+      "opis": "blablablabla\n\nblabla",
+      "cena": "999,99"
+    },
+    {
+      "kategoria": "narzedzia",
+      "zdj": "./promocje/dedra.jpg",
+      "producent": "Dedra",
+      "nazwa": "PILARKA DO DREWNA DED7754T3 2000W",
+      "opis": "✔ moc silnika 2000W\n✔ maks. średnica tarczy 254 mm\n✔ obudowa oraz stelaż z wytrzymałej stali\n✔  w zestawie 3 tarcze 250 mm",
+      "cena": "749,00"
+    },
+    {
+      "kategoria": "agd",
+      "zdj": "./promocje/amica.jpg",
+      "producent": "AMICA",
+      "nazwa": "KUCHANIA AMICA GAZOWO-ELEKTRYCZNA 50CM SREBRNA",
+      "opis": "ŻELIWNY RUSZT\nCZYSZCZENIE PAROWE\nTELESKOPOWE PROWADNICE\nTERMOOBIEG\nROZMRAŻANIE ",
+      "cena": "1299,00"
+    },
+    {
+      "kategoria": "agd",
+      "zdj": "./promocje/candy.png",
+      "producent": "CANDY",
+      "nazwa": "CHŁODZIARKA CANDY CCE 3T618 FW",
+      "opis": " - Kontroluj świeżość dzięki aplikacji Hon\n - 3 szuflady w zamrażarce\n - Specjalna szuflada na owoce i warzywa ",
+      "cena": "1699,00"
+    }
+  ]
+}

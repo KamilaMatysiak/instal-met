@@ -1,7 +1,7 @@
 footer {
   max-width: 1400px;
   width: 100%;
-  margin: auto;
+  margin: 4rem auto 0 auto;
 }
 
 footer > div {
@@ -33,7 +33,7 @@ footer > div {
 }
 
 .card p {
-  color: #777777;
+  color: #595959;
   font-style: italic;
 }
 
@@ -61,7 +61,8 @@ h2 {
 }
 
 .contact a {
-  color: #f5841f;
+  color: #b45908;
+  font-weight: 500;
 }
 
 .copyright {
