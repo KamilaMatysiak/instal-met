@@ -17,6 +17,7 @@
 .cardInfo {
   display: flex;
   flex-direction: column;
+  min-width: 200px;
   gap: 16px;
   height: 100% !important;
 }
@@ -41,4 +42,31 @@
   color: #f5841f;
   font-weight: 600;
   font-size: 32px;
+}
+
+@media (max-width: 900px) {
+  .card img {
+    height: auto;
+    max-width: 50%;
+    object-fit: contain;
+  }
+
+  .cardInfo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+  .card img {
+    margin: auto;
+  }
+
+  .cardInfo {
+    width: 100%;
+  }
 }

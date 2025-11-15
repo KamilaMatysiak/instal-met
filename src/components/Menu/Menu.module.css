@@ -21,3 +21,44 @@
 .menu a img {
   width: 2rem;
 }
+
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .menu a {
+    padding: 0.5rem;
+    transition: all 0.3s;
+  }
+
+  .menu a.active {
+    flex-grow: 1;
+  }
+
+  .menu h2 {
+    display: none;
+  }
+
+  .menu a.active h2 {
+    display: block;
+  }
+
+  .menu a:hover {
+    flex-grow: 1;
+  }
+  .menu a:hover h2 {
+    display: block;
+  }
+
+  .menu:has(a:hover:not(.active)) a.active {
+    flex: 0;
+  }
+
+  .menu:has(a:hover:not(.active)) a.active h2 {
+    display: none;
+  }
+}
